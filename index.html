@@ -11,54 +11,50 @@
 <body>
 <main>
 <header>
-    <div class="logo">
-        <a href="index.html">Bin's Web Portfolio </a>
-    </div>
-    <div class="email">kc06056@naver.com</div>
     <nav>
         <ul>
-            <li><a href="#about">about</a></li>
             <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#detail">detailpage</a></li>
             <li><a href="#etc">etc</a></li>
         </ul>
     </nav>
+    <div class="banner">
+        <a href="#">
+    <img src="./img/메인비디오.gif"></a>
+    </div>
 </header>
-<div class="mainimg">
-    <a href="index.html"><img src="./img/메인비디오.gif" alt="mainvideo"></video></a>
+<div class="maintxt">
+   <p> Portfolio</br>
+    2024
+   </p>
+</div>
+<div class="about">
+<div class="name">
+    <p>PARK HYO BIN</p>
+    </div>
+    <div class="aboutinner">
+    <p>박효빈</br>
+        1999.06.03</br>
+        010 5450 2337</br>
+        kc06056@naver.com</br>
+    </p>
+</div>
 </div>
 
 <a href="#" class="scroll-down">  
         <div class="arrow-down"></div>   
 </a>
-
-<div id="about">
-    <div class="intro">
-        <p>안녕하세요</p>
-        <h2>호기심이 많고 소통을 좋아하는 디자이너<br>
-        박효빈입니다.</h2> 
-    </div>
-<div class="aboutinner">
-    <div class="box box1">
-        <h4>ABOUT</h4>
-        <p>박효빈</p>
-        <p>1999.06.03</p>
-        <p>010 5450 2337</p>
-        <p>kc06056@naver.com</p> 
-        <img src="./img/민증_박효빈.jpg" alt="증명사진">
-    </div>
-    <div class="box box2">
-        <h4>CERTIFICATION</h4>
-        <p>2023 웹디자인기능사</p>
-        <p>2018 운전면허 2종 보통</p>
-    </div>
-    <div class="box box3">
-        <h4>experience</h4>
-        <p>2022 .02 영남대학교 예술대학 회화전공 졸업</p>
-        <p>2018 .02 김천예술고등학교 졸업</p>
-    </div>
-    <div class="box box4">
+<div class="intro">
+    <h2>
+        안녕하세요.</br>
+        호기심이 많고 소통을 좋아하는 디자이너 박효빈입니다.
+   </h2>
+    <p>
       
-    </div>
+     새로운 아이디어와 창의적인 접근을 통해 프로젝트에 기여하는 것에 대해 관심이 많습니다.</br>
+     최신 트렌드와 기술에 대한 열정을 갖고 있어서 항상 새로운 것을 배우고자 노력하고 있습니다.</br>
+     함께 일하며 더 나은 결과물을 만들기 위해 노력하겠습니다.   
+    </p>
 </div>
     <div class="skill">
         <h1>SKILL</h1>
@@ -117,6 +113,26 @@
     PORTFOLIO</h1>
     <div class="portfolio">
         <div class="photo">
+            <img src="./img/lelabo.jpg" alt="grimpan">
+            </div>
+        <div class="text">
+            <h3>01<br>
+            LE LABO</h3>
+            <h4>반응형웹사이트(창작) - HTML, CSS, J-query<br>
+            제작페이지 - MAIN </h4>
+           
+            <P>다양한 향의 향수, 바디제품 등의 제품을 파는 웹사이트입니다.</br>
+                기존의 메인페이지를 재구성해서 사용자들이 들어왔을 때 필요한 정보를 알 수 있도록 구성했습니다.
+                
+                
+</p>
+            <a href="https://kc06056.github.io/portfolio/6/">사이트 바로가기</a>
+        </div>
+        </div>
+  
+
+    <div class="portfolio">
+        <div class="photo">
             <img src="./img/shop.jpg" alt="grimpan">
             </div>
         <div class="text">
@@ -163,8 +179,6 @@
                 <a href="https://kc06056.github.io/portfolio/3/">사이트 바로가기</a>
             </div>
             </div>
- 
-
     <div class="portfolio">
         <div class="photo">
             <img src="./img/테이블링메인1.jpg" alt="tabling">
@@ -178,9 +192,26 @@
             <a href="https://kc06056.github.io/portfolio/4/">기획서 보기</a>
         </div>
         </div>
-
 </div>
-
+<div id="detail">
+    <h1>Detail Page</h1>
+    <p class="detailtxt">이미지를 클릭하면 상세페이지를 전체를 볼 수 있습니다.</br>
+    </p>
+    <div class="detailpage">
+        <div class="detail">
+            <img src="./img/사과상세페이지.jpg" onclick="showImage(this)">
+        </div>
+        <div class="detail">
+            <img src="./img/향수상세페이지.jpg" onclick="showImage(this)">
+        </div>
+        <div class="detail">
+            <img src="./img/이불상세페이지.jpg" onclick="showImage(this)">
+        </div>
+    </div>
+</div>
+<div id="imagePopup" onclick="closeImagePopup()">
+    <img id="popupImg" src="">
+</div>
 <div id="etc">
     <h1>ETC</h1>
  
