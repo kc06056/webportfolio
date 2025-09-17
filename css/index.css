@@ -237,7 +237,7 @@ nav ul li a{
     stroke-width: 10px;
     stroke: rgb(0, 0, 0);
     stroke-dashoffset: 284;
-    stroke-dasharray: 360;
+    stroke-dasharray: 400;
     animation: loader1 2s ease;
     transform: rotate(-90deg);
     transform-origin: center center;
@@ -247,8 +247,8 @@ nav ul li a{
     fill: none;
     stroke-width: 10px;
     stroke: rgb(0, 0, 0);
-    stroke-dashoffset: 100;
-    stroke-dasharray: 240;
+    stroke-dashoffset: 284;
+    stroke-dasharray: 360;
     animation: loader1 2s ease;
     transform: rotate(-90deg);
     transform-origin: center center;
@@ -259,7 +259,7 @@ nav ul li a{
     stroke-width: 10px;
     stroke: rgb(0, 0, 0);
     stroke-dashoffset: 284;
-    stroke-dasharray: 330;
+    stroke-dasharray: 360;
     animation: loader1 2s ease;
     transform: rotate(-90deg);
     transform-origin: center;
@@ -270,7 +270,7 @@ nav ul li a{
     stroke-width: 10px;
     stroke: rgb(0, 0, 0);
     stroke-dashoffset: 284;
-    stroke-dasharray: 360;
+    stroke-dasharray: 310;
     animation: loader1 2s ease;
     transform: rotate(-90deg);
     transform-origin: center center;
