@@ -32,32 +32,41 @@ $(function(){
   $(document).ready(function(){
     let popupOpened = false;
 
+$(document).ready(function(){
+
+    let popupOpened = false; // 팝업 열림 상태 확인
+
+    // 이미지 클릭 → 팝업 열기
     $(".detail img").click(function(e){
         e.stopPropagation(); 
         const imgSrc = $(this).attr('src');
         $("#popupImg").attr('src', imgSrc);
-        $("#imagePopup").show();
+        $("#imagePopup").fadeIn(); // show 대신 fadeIn으로 부드럽게
 
-        // 팝업이 열릴 때 한 번만 스크롤을 맨 위로 이동시키기
+        // 팝업 열릴 때 스크롤 맨 위로 이동
         if (!popupOpened) {
-            console.log("팝업이 열릴 때 스크롤을 맨 위로 이동");
             $("#imagePopup").scrollTop(0);
             popupOpened = true;
         }
     });
-    //이미지클릭시 팝업 닫을 때
-    $("#imagePopup").click(function(){
-        $(this).hide();
-        popupOpened = false; // 팝업이 닫힐 때 popupOpened 변수 초기화
+
+    // 닫기 버튼 클릭 → 팝업 닫기
+    $("#closePopup").click(function(e){
+        e.stopPropagation(); // 버튼 클릭 이벤트가 부모로 전달 안 되게
+        $("#imagePopup").fadeOut();
+        popupOpened = false;
     });
 
-    // 외부 영역을 클릭해서 팝업을 닫을 때
-    $(document).click(function(e){
-        if (!$(e.target).closest("#imagePopup").length && !$(e.target).is("#imagePopup")) {
-            $("#imagePopup").hide();
-            popupOpened = false; 
+    // 배경 클릭 → 팝업 닫기
+    $("#imagePopup").click(function(e){
+        if(e.target === this){ // #imagePopup 배경 클릭 시만
+            $(this).fadeOut();
+            popupOpened = false;
         }
     });
+
+});
+
 });
 
 
