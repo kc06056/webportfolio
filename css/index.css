@@ -571,9 +571,10 @@ nav ul li a{
     padding: 1.5%;
 }
 .etcsub li video {
-    width: 30%;     
-    height: 50%;      
+    width: 30vw;     
+    height: 60vh;      
     display: block;
+      padding: 2.7%;
 }
 
 footer{
